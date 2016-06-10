@@ -7,9 +7,13 @@ service iptables save
 
 ###安装 
 rm -f install_fs.sh
+
 wget  https://raw.githubusercontent.com/txd159/finalspeed_installer/master/install_fs.sh
+
 chmod +x install_fs.sh
+
 ./install_fs.sh 2>&1 | tee install.log
+
 
 
 ###卸载
